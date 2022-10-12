@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit
 
 class LoomThreadPoolKt : ThreadPool {
 
-    private val executorService = Executors.newVirtualThreadExecutor()
+    private val executorService = Executors.newVirtualThreadPerTaskExecutor()
 
     override fun join() {
         executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS)
