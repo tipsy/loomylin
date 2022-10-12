@@ -58,7 +58,7 @@ sdk list java
 Locate an SDK with Loom (ex: `16.ea.7.lm-open`), and do:
 
 ```
-sdk install 16.ea.7.lm-open
+sdk install java 19-open
 ```
 
 That's it. Now you can either run the project via Maven Wrapper by doing:
