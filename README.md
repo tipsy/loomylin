@@ -55,17 +55,17 @@ To list all the available JDKs, you do:
 sdk list java
 ```
 
-Locate an SDK with Loom (ex: `16.ea.7.lm-open`), and do:
+Locate an SDK with Loom (ex: `19-open`), and do:
 
 ```
-sdk install 16.ea.7.lm-open
+sdk install java 19-open
 ```
 
 That's it. Now you can either run the project via Maven Wrapper by doing:
 
 ```
 ./mvnw clean install
-java -jar target/loomylin-jar-with-dependencies.jar
+java --enable-preview -jar target/loomylin-jar-with-dependencies.jar
 ```
 
 Or open the project in your favorite IDE. If you get `Error: Cannot determine path to
